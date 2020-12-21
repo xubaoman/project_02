@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function (ev){
+            var date=new Date();
+            date.setDate(date.getDate()+1);
+            document.cookie="age=33;expires="+date.toGMTString()+";";
+            alert(document.cookie);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
